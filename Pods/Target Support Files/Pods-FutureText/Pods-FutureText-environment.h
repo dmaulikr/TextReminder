@@ -6,9 +6,9 @@
 // project.
 
 
-// AKNumericFormatter
-#define COCOAPODS_POD_AVAILABLE_AKNumericFormatter
-#define COCOAPODS_VERSION_MAJOR_AKNumericFormatter 0
-#define COCOAPODS_VERSION_MINOR_AKNumericFormatter 0
-#define COCOAPODS_VERSION_PATCH_AKNumericFormatter 2
+// ECPhoneNumberFormatter
+#define COCOAPODS_POD_AVAILABLE_ECPhoneNumberFormatter
+#define COCOAPODS_VERSION_MAJOR_ECPhoneNumberFormatter 0
+#define COCOAPODS_VERSION_MINOR_ECPhoneNumberFormatter 1
+#define COCOAPODS_VERSION_PATCH_ECPhoneNumberFormatter 1
 

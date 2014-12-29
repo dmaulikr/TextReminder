@@ -1,10 +1,10 @@
 PODS:
-  - AKNumericFormatter (0.0.2)
+  - ECPhoneNumberFormatter (0.1.1)
 
 DEPENDENCIES:
-  - AKNumericFormatter
+  - ECPhoneNumberFormatter
 
 SPEC CHECKSUMS:
-  AKNumericFormatter: 1e139772f4b4e6cea99fbfc8a4ca091dcef01576
+  ECPhoneNumberFormatter: 5e178027d1d43472187c3f623e7b69b89fdb3187
 
 COCOAPODS: 0.35.0

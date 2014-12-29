@@ -2,7 +2,7 @@
 platform :ios, '6.0'
 
 target 'FutureText' do
-pod 'AKNumericFormatter'
+pod 'ECPhoneNumberFormatter'
 end
 
 target 'FutureTextTests' do
