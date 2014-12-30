@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6982B2857820578F8E2E8A8E /* libPods-FutureText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */; };
 		70AA1CD41A51D9AA0071E278 /* Scheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CD31A51D9AA0071E278 /* Scheduler.m */; };
+		70AA1CD61A52093C0071E278 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AA1CD51A52093C0071E278 /* MessageUI.framework */; };
+		70AA1CD91A53639E0071E278 /* SMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CD81A53639E0071E278 /* SMSViewController.m */; };
 		70E3BE251A51B43000BB37F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE241A51B43000BB37F2 /* main.m */; };
 		70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE271A51B43000BB37F2 /* AppDelegate.m */; };
 		70E3BE2B1A51B43000BB37F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE2A1A51B43000BB37F2 /* ViewController.m */; };
@@ -33,6 +35,9 @@
 		6810E9B63AF3424EB4C9E547 /* Pods-FutureText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FutureText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FutureText/Pods-FutureText.debug.xcconfig"; sourceTree = "<group>"; };
 		70AA1CD21A51D9AA0071E278 /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
 		70AA1CD31A51D9AA0071E278 /* Scheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scheduler.m; sourceTree = "<group>"; };
+		70AA1CD51A52093C0071E278 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		70AA1CD71A53639E0071E278 /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSViewController.h; sourceTree = "<group>"; };
+		70AA1CD81A53639E0071E278 /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSViewController.m; sourceTree = "<group>"; };
 		70E3BE1F1A51B43000BB37F2 /* FutureText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE231A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE241A51B43000BB37F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AA1CD61A52093C0071E278 /* MessageUI.framework in Frameworks */,
 				6982B2857820578F8E2E8A8E /* libPods-FutureText.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,8 @@
 				70E3BE271A51B43000BB37F2 /* AppDelegate.m */,
 				70E3BE291A51B43000BB37F2 /* ViewController.h */,
 				70E3BE2A1A51B43000BB37F2 /* ViewController.m */,
+				70AA1CD71A53639E0071E278 /* SMSViewController.h */,
+				70AA1CD81A53639E0071E278 /* SMSViewController.m */,
 				70AA1CD21A51D9AA0071E278 /* Scheduler.h */,
 				70AA1CD31A51D9AA0071E278 /* Scheduler.m */,
 				70E3BE2C1A51B43000BB37F2 /* Main.storyboard */,
@@ -134,6 +142,7 @@
 		790E3B7DBB1D2F2E2C5E05F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70AA1CD51A52093C0071E278 /* MessageUI.framework */,
 				485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */,
 			);
 			name = Frameworks;
@@ -285,6 +294,7 @@
 			files = (
 				70E3BE2B1A51B43000BB37F2 /* ViewController.m in Sources */,
 				70AA1CD41A51D9AA0071E278 /* Scheduler.m in Sources */,
+				70AA1CD91A53639E0071E278 /* SMSViewController.m in Sources */,
 				70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */,
 				70E3BE251A51B43000BB37F2 /* main.m in Sources */,
 			);
