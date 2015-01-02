@@ -30,7 +30,7 @@
     
     if ([MFMessageComposeViewController canSendText]) {
 
-//        SMSController.recipients = @[@"8132709947"];
+        SMSController.recipients = @[@"8136667795"];
         SMSController.body = @"whatsup";
         SMSController.messageComposeDelegate = self;
 
@@ -38,13 +38,20 @@
         [self presentViewController:SMSController animated:YES completion:nil];
         
         
-        //[self dismissViewControllerAnimated:YES completion:nil];
-        
     }else {
         NSLog(@"Can't send message");
     }
     
-    
-    
 }
+
+-(void)messageComposeViewController:(MFMessageComposeViewController *)controller
+                didFinishWithResult:(MessageComposeResult)result
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if (result == MessageComposeResultCancelled) NSLog(@"Message Cancelled");
+    if (result == MessageComposeResultFailed) NSLog(@"Message Sending Failed");
+    if (result == MessageComposeResultSent) NSLog(@"Message Sent! Yay!");
+}
+        
 @end
