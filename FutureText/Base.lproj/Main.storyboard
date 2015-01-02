@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Xog-vY-da1" kind="show" id="TcD-lC-XCF"/>
+                                    <action selector="sendSMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6j-8W-UQ3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,24 +35,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="R6F-OX-hBt">
-            <objects>
-                <viewController id="Xog-vY-da1" customClass="SMSViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ECA-4N-kFF"/>
-                        <viewControllerLayoutGuide type="bottom" id="cmo-eh-Gnx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R7M-lQ-Ksl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gp-H6-MB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="774" y="136"/>
         </scene>
     </scenes>
 </document>
