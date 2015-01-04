@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Set Miminum Date to display by UIDatePicker so users can't schedule for the date in the past
+    self.pickedDate.minimumDate = [NSDate date];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,17 +59,74 @@
 }
 
 - (IBAction)scheduleButton:(UIButton *)sender {
-    [self scheduleLocalNotification:self.pickedDate.date];
     
+    // Checking if UserNotifications (Alerts) are enabled by the user
+    UIUserNotificationSettings *currentNotificationSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    NSLog(@"%@", currentNotificationSettings);
     
+    // Display notification to the user to Enable User Notifications
+    if (!(currentNotificationSettings.types & UIUserNotificationTypeAlert)) {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Can't schedule alert"
+                                                                       message:@"Please to to Seetings > Notifications and enable ALERTS and SOUNDS"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        // Dismiss action
+        UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
+                                                                style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:dismissAction];
+        
+        // Go to Settings action
+        UIAlertAction *goToSettingsAction = [UIAlertAction actionWithTitle:@"Go To Settings Now"
+                                                                     style:UIAlertActionStyleDefault
+                                                                   handler:^(UIAlertAction *action) {
+                                                                       
+                                                                       // Opens settings
+                                                                       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+                                                                       
+                                                                   }];
+        [alert addAction:goToSettingsAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    
+        
+    }
+    
+    // Display notification to the user to Enable Sounds
+    if (!(currentNotificationSettings.types & UIUserNotificationTypeSound)) {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Can't schedule alert"
+                                                                       message:@"Please to to Seetings > Notifications and enable SOUNDS"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        // Dismiss action
+        UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
+                                                                style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:dismissAction];
+        
+        // Go to Settings action
+        UIAlertAction *goToSettingsAction = [UIAlertAction actionWithTitle:@"Go To Settings Now"
+                                                                     style:UIAlertActionStyleDefault
+                                                                   handler:^(UIAlertAction *action) {
+                                                                       
+                                                                       // Opens settings
+                                                                       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+                                                                       
+                                                                   }];
+        [alert addAction:goToSettingsAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+
+    // If Sound+Alerts are available -> chedule notifications
+    if ((currentNotificationSettings.types & UIUserNotificationTypeSound) && (currentNotificationSettings.types & UIUserNotificationTypeAlert))[self scheduleLocalNotification:self.pickedDate.date];
+
 }
 
 
 -(void) scheduleLocalNotification: (NSDate *)date
 {
-    
-    
-    
     // Create LocalNotification and specify it's parameters
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = date;
@@ -89,40 +149,6 @@
           handler:^(UIAlertAction * action) {}];
     [successfulSchedule addAction:dismissAction];
     [self presentViewController:successfulSchedule animated:YES completion:nil];
-}
-
--(void) viewDidAppear:(BOOL)animated
-{
-    // Checking if UserNotifications (Alerts) are enabled by the user
-    UIUserNotificationSettings *currentNotificationSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
-    
-    // Display notification to the user to Enable User Notifications
-    if (currentNotificationSettings.types == UIUserNotificationTypeNone) {
-        
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Important"
-               message:@"In order for you to receive reminders about your messages you need to allow this app to do so. Please go to Settings > Notifications > FutureText and allow notifications."
-        preferredStyle:UIAlertControllerStyleAlert];
-        
-        // Dismiss action
-        UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
-                                    style:UIAlertActionStyleDefault
-                                  handler:^(UIAlertAction * action) {}];
-        [alert addAction:dismissAction];
-        
-        // Go to Settings action
-        UIAlertAction *goToSettingsAction = [UIAlertAction actionWithTitle:@"Go To Settings Now"
-             style:UIAlertActionStyleDefault
-           handler:^(UIAlertAction *action) {
-               
-               // Opens settings
-               [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
-               
-           }];
-        [alert addAction:goToSettingsAction];
-
-        
-        
-    }
 }
 
 @end
