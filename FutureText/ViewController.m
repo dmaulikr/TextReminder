@@ -10,6 +10,7 @@
 #import <MessageUI/MessageUI.h>
 
 @interface ViewController ()  <MFMessageComposeViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
 
 @end
 
@@ -54,6 +55,42 @@
     if (result == MessageComposeResultSent) NSLog(@"Message Sent! Yay!");
 }
 
+- (IBAction)scheduleButton:(UIButton *)sender {
+    [self scheduleLocalNotification:self.pickedDate.date];
+    
+    
+}
+
+
+-(void) scheduleLocalNotification: (NSDate *)date
+{
+    
+    
+    
+    // Create LocalNotification and specify it's parameters
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = date;
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.repeatInterval = 0;
+    localNotification.alertBody = @"Scheduled Message Alert!";
+    localNotification.alertAction = @"Slide to send message"; // doesn't do anything
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    // Displays alert to the user about successful schedule of their notification
+    UIAlertController *successfulSchedule = [UIAlertController alertControllerWithTitle:@"Note:"
+       message:@"Your reminder has been successfully scheduled."
+    preferredStyle:UIAlertControllerStyleAlert];
+    
+    // Dismiss action
+    UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
+            style:UIAlertActionStyleDefault
+          handler:^(UIAlertAction * action) {}];
+    [successfulSchedule addAction:dismissAction];
+    [self presentViewController:successfulSchedule animated:YES completion:nil];
+}
+
 -(void) viewDidAppear:(BOOL)animated
 {
     // Checking if UserNotifications (Alerts) are enabled by the user
@@ -84,7 +121,7 @@
         [alert addAction:goToSettingsAction];
 
         
-        [self presentViewController:alert animated:YES completion:nil];
+        
     }
 }
 
