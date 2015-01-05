@@ -35,8 +35,36 @@
                                     <action selector="scheduleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnF-OJ-oBw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-3O-qkr">
+                                <rect key="frame" x="222" y="59" width="156" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Pick a contact">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickContactButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7J6-Sa-oAr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjH-Qz-iGt">
+                                <rect key="frame" x="258" y="109" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbU-ie-Duh">
+                                <rect key="frame" x="259" y="138" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+(000) 000-0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-eD-lhH">
+                                <rect key="frame" x="237" y="167" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnB-Ue-ETm">
-                                <rect key="frame" x="249" y="28" width="102" height="30"/>
+                                <rect key="frame" x="249" y="450" width="102" height="30"/>
                                 <state key="normal" title="Schedule SMS">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -49,13 +77,25 @@
                         <constraints>
                             <constraint firstItem="20H-go-qRR" firstAttribute="top" secondItem="AiF-e7-0kO" secondAttribute="bottom" constant="19" id="0bv-dT-x1N"/>
                             <constraint firstAttribute="centerX" secondItem="AiF-e7-0kO" secondAttribute="centerX" id="CrW-u9-5hJ"/>
-                            <constraint firstItem="CnB-Ue-ETm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="G2e-ob-FgU"/>
+                            <constraint firstAttribute="centerX" secondItem="QbU-ie-Duh" secondAttribute="centerX" id="ERm-Ov-s80"/>
+                            <constraint firstItem="QbU-ie-Duh" firstAttribute="top" secondItem="yjH-Qz-iGt" secondAttribute="bottom" constant="8" id="G8i-cl-1oz"/>
+                            <constraint firstAttribute="centerX" secondItem="WG0-eD-lhH" secondAttribute="centerX" id="G8p-Ir-bJY"/>
+                            <constraint firstItem="yjH-Qz-iGt" firstAttribute="top" secondItem="lvd-3O-qkr" secondAttribute="bottom" constant="8" id="HHb-cx-JCO"/>
                             <constraint firstAttribute="centerX" secondItem="20H-go-qRR" secondAttribute="centerX" id="TfN-fb-bSt"/>
+                            <constraint firstItem="CnB-Ue-ETm" firstAttribute="top" secondItem="20H-go-qRR" secondAttribute="bottom" constant="8" id="Wa5-YJ-zYd"/>
+                            <constraint firstAttribute="centerX" secondItem="lvd-3O-qkr" secondAttribute="centerX" id="fHM-Qu-qDa"/>
                             <constraint firstAttribute="centerY" secondItem="AiF-e7-0kO" secondAttribute="centerY" id="fJN-nC-QX4"/>
-                            <constraint firstItem="CnB-Ue-ETm" firstAttribute="centerX" secondItem="AiF-e7-0kO" secondAttribute="centerX" id="yXx-74-4Zs"/>
+                            <constraint firstAttribute="centerX" secondItem="yjH-Qz-iGt" secondAttribute="centerX" id="fhF-IZ-nUZ"/>
+                            <constraint firstItem="WG0-eD-lhH" firstAttribute="top" secondItem="QbU-ie-Duh" secondAttribute="bottom" constant="8" id="h8Q-lQ-Cws"/>
+                            <constraint firstAttribute="centerX" secondItem="CnB-Ue-ETm" secondAttribute="centerX" id="kBL-Ak-GGU"/>
+                            <constraint firstItem="lvd-3O-qkr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="pdu-DL-ZZd"/>
+                            <constraint firstAttribute="centerX" secondItem="lvd-3O-qkr" secondAttribute="centerX" id="vXx-8d-IIq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstNameLabel" destination="yjH-Qz-iGt" id="HM9-ax-CCR"/>
+                        <outlet property="lastNameLabel" destination="QbU-ie-Duh" id="N7s-G2-FbO"/>
+                        <outlet property="phoneNumberLabel" destination="WG0-eD-lhH" id="u0W-ur-qit"/>
                         <outlet property="pickedDate" destination="AiF-e7-0kO" id="FS8-sy-n9e"/>
                     </connections>
                 </viewController>

@@ -8,9 +8,13 @@
 
 #import "ViewController.h"
 #import <MessageUI/MessageUI.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface ViewController ()  <MFMessageComposeViewControllerDelegate>
+@interface ViewController ()  <MFMessageComposeViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 
 @end
 
@@ -149,6 +153,39 @@
           handler:^(UIAlertAction * action) {}];
     [successfulSchedule addAction:dismissAction];
     [self presentViewController:successfulSchedule animated:YES completion:nil];
+}
+
+- (IBAction)pickContactButton:(UIButton *)sender
+{
+    ABPeoplePickerNavigationController *contactsNavController = [[ABPeoplePickerNavigationController alloc] init];
+    contactsNavController.peoplePickerDelegate = self;
+    
+    // Prefents ABPeoplePickerNavigationController to display anything else but phone numbers!
+    contactsNavController.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonPhoneProperty]];
+    [self presentViewController:contactsNavController animated:YES completion:nil];
+}
+
+// Delegate of ABPeoplePickerNavigationControllerDelegate - CASE: CANCEL
+-(void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
+{
+    // Just dismiss the ABPeoplePickerNavigationController
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// Delegate of ABPeoplePickerNavigationControllerDelegate - CASE: CHOSEN CONTACT
+-(void) peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker
+                         didSelectPerson:(ABRecordRef)person
+                                property:(ABPropertyID)property
+                              identifier:(ABMultiValueIdentifier)identifier
+{
+    // Lets copy contact's First and Last name to our labels
+    self.firstNameLabel.text = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
+    self.lastNameLabel.text = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);
+    
+    // Lets copy the picked contacts' phone number to our label
+    ABMultiValueRef phoneNumber = ABRecordCopyValue(person, property);
+    self.phoneNumberLabel.text = (__bridge NSString *)ABMultiValueCopyValueAtIndex(phoneNumber, ABMultiValueGetIndexForIdentifier(phoneNumber, identifier));
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
