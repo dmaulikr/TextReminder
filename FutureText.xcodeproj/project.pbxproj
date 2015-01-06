@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6982B2857820578F8E2E8A8E /* libPods-FutureText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */; };
-		70AA1CD41A51D9AA0071E278 /* Scheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CD31A51D9AA0071E278 /* Scheduler.m */; };
 		70AA1CD61A52093C0071E278 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AA1CD51A52093C0071E278 /* MessageUI.framework */; };
 		70E3BE251A51B43000BB37F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE241A51B43000BB37F2 /* main.m */; };
 		70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE271A51B43000BB37F2 /* AppDelegate.m */; };
-		70E3BE2B1A51B43000BB37F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE2A1A51B43000BB37F2 /* ViewController.m */; };
+		70E3BE2B1A51B43000BB37F2 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */; };
 		70E3BE2E1A51B43000BB37F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3BE2C1A51B43000BB37F2 /* Main.storyboard */; };
 		70E3BE301A51B43000BB37F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E3BE2F1A51B43000BB37F2 /* Images.xcassets */; };
 		70E3BE331A51B43000BB37F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E3BE311A51B43000BB37F2 /* LaunchScreen.xib */; };
@@ -32,16 +31,14 @@
 /* Begin PBXFileReference section */
 		485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FutureText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6810E9B63AF3424EB4C9E547 /* Pods-FutureText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FutureText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FutureText/Pods-FutureText.debug.xcconfig"; sourceTree = "<group>"; };
-		70AA1CD21A51D9AA0071E278 /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
-		70AA1CD31A51D9AA0071E278 /* Scheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scheduler.m; sourceTree = "<group>"; };
 		70AA1CD51A52093C0071E278 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		70E3BE1F1A51B43000BB37F2 /* FutureText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE231A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE241A51B43000BB37F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70E3BE261A51B43000BB37F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70E3BE271A51B43000BB37F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		70E3BE291A51B43000BB37F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		70E3BE2A1A51B43000BB37F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70E3BE291A51B43000BB37F2 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		70E3BE2D1A51B43000BB37F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70E3BE2F1A51B43000BB37F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70E3BE321A51B43000BB37F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -94,10 +91,8 @@
 		70E3BE211A51B43000BB37F2 /* FutureText */ = {
 			isa = PBXGroup;
 			children = (
-				70E3BE291A51B43000BB37F2 /* ViewController.h */,
-				70E3BE2A1A51B43000BB37F2 /* ViewController.m */,
-				70AA1CD21A51D9AA0071E278 /* Scheduler.h */,
-				70AA1CD31A51D9AA0071E278 /* Scheduler.m */,
+				70E3BE291A51B43000BB37F2 /* ScheduleViewController.h */,
+				70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */,
 				70E3BE2C1A51B43000BB37F2 /* Main.storyboard */,
 				70E3BE2F1A51B43000BB37F2 /* Images.xcassets */,
 				70E3BE311A51B43000BB37F2 /* LaunchScreen.xib */,
@@ -287,8 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E3BE2B1A51B43000BB37F2 /* ViewController.m in Sources */,
-				70AA1CD41A51D9AA0071E278 /* Scheduler.m in Sources */,
+				70E3BE2B1A51B43000BB37F2 /* ScheduleViewController.m in Sources */,
 				70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */,
 				70E3BE251A51B43000BB37F2 /* main.m in Sources */,
 			);

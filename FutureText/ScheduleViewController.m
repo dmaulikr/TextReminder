@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Kartoshka. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ScheduleViewController.h"
 #import <MessageUI/MessageUI.h>
 #import <AddressBookUI/AddressBookUI.h>
 
-@interface ViewController ()  <MFMessageComposeViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate>
+@interface ScheduleViewController ()  <MFMessageComposeViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation ViewController 
+@implementation ScheduleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,7 +66,6 @@
     
     // Checking if UserNotifications (Alerts) are enabled by the user
     UIUserNotificationSettings *currentNotificationSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
-    NSLog(@"%@", currentNotificationSettings);
     
     // Display notification to the user to Enable User Notifications
     if (!(currentNotificationSettings.types & UIUserNotificationTypeAlert)) {
