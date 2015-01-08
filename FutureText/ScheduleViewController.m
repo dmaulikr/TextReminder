@@ -7,14 +7,14 @@
 //
 
 #import "ScheduleViewController.h"
+#import <ECPhoneNumberFormatter.h>
 #import <MessageUI/MessageUI.h>
 #import <AddressBookUI/AddressBookUI.h>
 
-@interface ScheduleViewController ()  <MFMessageComposeViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate>
+@interface ScheduleViewController ()  <MFMessageComposeViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
-@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumberLabel;
+@property (weak, nonatomic) IBOutlet UITextView *messageTextLabel;
 
 @end
 
@@ -26,6 +26,8 @@
     
     // Set Miminum Date to display by UIDatePicker so users can't schedule for the date in the past
     self.pickedDate.minimumDate = [NSDate date];
+    self.messageTextLabel.delegate = self;
+    self.phoneNumberLabel.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,7 +64,7 @@
     if (result == MessageComposeResultSent) NSLog(@"Message Sent! Yay!");
 }
 
-- (IBAction)scheduleButton:(UIButton *)sender {
+- (IBAction)saveButton:(UIButton *)sender {
     
     // Checking if UserNotifications (Alerts) are enabled by the user
     UIUserNotificationSettings *currentNotificationSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
@@ -177,14 +179,38 @@
                                 property:(ABPropertyID)property
                               identifier:(ABMultiValueIdentifier)identifier
 {
-    // Lets copy contact's First and Last name to our labels
-    self.firstNameLabel.text = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
-    self.lastNameLabel.text = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);
-    
     // Lets copy the picked contacts' phone number to our label
     ABMultiValueRef phoneNumber = ABRecordCopyValue(person, property);
     self.phoneNumberLabel.text = (__bridge NSString *)ABMultiValueCopyValueAtIndex(phoneNumber, ABMultiValueGetIndexForIdentifier(phoneNumber, identifier));
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// Delegate of UITextView (to dismiss keyboard)
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
+// Delegate of UITextField to format phone number
+- (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+//    ECPhoneNumberFormatter *formatter = [[ECPhoneNumberFormatter alloc] init];
+//    self.phoneNumberLabel.text = [formatter stringForObjectValue:string];
+    
+    return YES;
+}
+
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField
+{
+        ECPhoneNumberFormatter *formatter = [[ECPhoneNumberFormatter alloc] init];
+        self.phoneNumberLabel.text = [formatter stringForObjectValue:textField.text];
+
+    return YES;
 }
 
 @end

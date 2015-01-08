@@ -1,11 +1,9 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '6.0'
+# platform :ios, '6.0'
 
 target 'FutureText' do
-pod 'ECPhoneNumberFormatter'
+pod 'ECPhoneNumberFormatter', '~> 0.1'
 end
 
 target 'FutureTextTests' do
-
 end
-

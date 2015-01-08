@@ -2,7 +2,7 @@ PODS:
   - ECPhoneNumberFormatter (0.1.1)
 
 DEPENDENCIES:
-  - ECPhoneNumberFormatter
+  - ECPhoneNumberFormatter (~> 0.1)
 
 SPEC CHECKSUMS:
   ECPhoneNumberFormatter: 5e178027d1d43472187c3f623e7b69b89fdb3187
