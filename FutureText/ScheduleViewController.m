@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UITextView *messageTextLabel;
+@property (strong, nonatomic) ECPhoneNumberFormatter *formatter;
 
 @end
 
@@ -28,6 +29,11 @@
     self.pickedDate.minimumDate = [NSDate date];
     self.messageTextLabel.delegate = self;
     self.phoneNumberLabel.delegate = self;
+}
+
+-(void) setFormatter:(ECPhoneNumberFormatter *)formatter
+{
+    if (!formatter) _formatter = [[ECPhoneNumberFormatter alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -199,8 +205,9 @@
 // Delegate of UITextField to format phone number
 - (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-//    ECPhoneNumberFormatter *formatter = [[ECPhoneNumberFormatter alloc] init];
-//    self.phoneNumberLabel.text = [formatter stringForObjectValue:string];
+    ECPhoneNumberFormatter *formating = [[ECPhoneNumberFormatter alloc] init];
+    NSString *proposedNewString = [formating stringForObjectValue:textField.text];
+    textField.text = proposedNewString;
     
     return YES;
 }
