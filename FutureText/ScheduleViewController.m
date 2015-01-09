@@ -9,10 +9,9 @@
 #import "ScheduleViewController.h"
 #import "AddData.h"
 #import <ECPhoneNumberFormatter.h>
-#import <MessageUI/MessageUI.h>
 #import <AddressBookUI/AddressBookUI.h>
 
-@interface ScheduleViewController ()  <MFMessageComposeViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate>
+@interface ScheduleViewController ()  < ABPeoplePickerNavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UITextView *messageTextLabel;
@@ -34,35 +33,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)sendSMS:(UIButton *)sender {
-    MFMessageComposeViewController *SMSController = [[MFMessageComposeViewController alloc] init];
-    
-    if ([MFMessageComposeViewController canSendText]) {
-
-        SMSController.recipients = @[@"8136667795"];
-        SMSController.body = @"whatsup";
-        SMSController.messageComposeDelegate = self;
-
-        
-        [self presentViewController:SMSController animated:YES completion:nil];
-        
-        
-    }else {
-        NSLog(@"Can't send message");
-    }
-    
-}
-
--(void)messageComposeViewController:(MFMessageComposeViewController *)controller
-                didFinishWithResult:(MessageComposeResult)result
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    if (result == MessageComposeResultCancelled) NSLog(@"Message Cancelled");
-    if (result == MessageComposeResultFailed) NSLog(@"Message Sending Failed");
-    if (result == MessageComposeResultSent) NSLog(@"Message Sent! Yay!");
 }
 
 - (IBAction)saveButton:(UIButton *)sender {

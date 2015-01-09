@@ -12,6 +12,7 @@
 		70AA1CF11A5F2EC40071E278 /* testClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF01A5F2EC40071E278 /* testClass.m */; };
 		70AA1CF41A5F3A200071E278 /* AddData.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF31A5F3A200071E278 /* AddData.m */; };
 		70AA1CF71A5F47700071E278 /* ScheduledItemsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */; };
+		70AA1CFA1A606E3C0071E278 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF91A606E3C0071E278 /* DetailViewController.m */; };
 		70E3BE251A51B43000BB37F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE241A51B43000BB37F2 /* main.m */; };
 		70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE271A51B43000BB37F2 /* AppDelegate.m */; };
 		70E3BE2B1A51B43000BB37F2 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */; };
@@ -41,6 +42,8 @@
 		70AA1CF31A5F3A200071E278 /* AddData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddData.m; sourceTree = "<group>"; };
 		70AA1CF51A5F47700071E278 /* ScheduledItemsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduledItemsTVC.h; sourceTree = "<group>"; };
 		70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledItemsTVC.m; sourceTree = "<group>"; };
+		70AA1CF81A606E3C0071E278 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		70AA1CF91A606E3C0071E278 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		70E3BE1F1A51B43000BB37F2 /* FutureText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE231A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE241A51B43000BB37F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				70AA1CF21A5F3A200071E278 /* AddData.h */,
 				70AA1CF31A5F3A200071E278 /* AddData.m */,
 				70E3BE2C1A51B43000BB37F2 /* Main.storyboard */,
+				70AA1CF81A606E3C0071E278 /* DetailViewController.h */,
+				70AA1CF91A606E3C0071E278 /* DetailViewController.m */,
 				70AA1CF51A5F47700071E278 /* ScheduledItemsTVC.h */,
 				70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */,
 				70E3BE2F1A51B43000BB37F2 /* Images.xcassets */,
@@ -303,6 +308,7 @@
 				70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */,
 				70E3BE251A51B43000BB37F2 /* main.m in Sources */,
 				70AA1CF41A5F3A200071E278 /* AddData.m in Sources */,
+				70AA1CFA1A606E3C0071E278 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "ScheduledItemsTVC.h"
 #import "AddData.h"
+#import "DetailViewController.h"
 
 @interface ScheduledItemsTVC ()
 
@@ -53,9 +54,10 @@
     [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
     [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
     
+    // Creating strings out of our NSUserDefaults data
     NSString *title = [dateFormatter stringFromDate:[[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"date"]];
     NSString *subTitle = [NSString stringWithFormat:@"To number: %@", [[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"number"]];
-        
+    
     cell.textLabel.text = title;
     cell.detailTextLabel.text = subTitle;
     
@@ -97,14 +99,25 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"detailVewControllerSegue"])
+    {
+        // Get reference to the destination view controller
+        DetailViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        // Passing NSIndexPath to DetailViewController
+        [vc setIndexPath:path];
+    }
 }
-*/
+
 
 @end
