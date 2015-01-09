@@ -42,15 +42,26 @@
     return [AddData calculateNumberOfRows];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    // Setting Date & Time format to display in the cell
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    
+    NSString *title = [dateFormatter stringFromDate:[[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"date"]];
+    NSString *subTitle = [NSString stringWithFormat:@"To number: %@", [[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"number"]];
+        
+    cell.textLabel.text = title;
+    cell.detailTextLabel.text = subTitle;
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
