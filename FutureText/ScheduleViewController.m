@@ -7,6 +7,7 @@
 //
 
 #import "ScheduleViewController.h"
+#import "AddData.h"
 #import <ECPhoneNumberFormatter.h>
 #import <MessageUI/MessageUI.h>
 #import <AddressBookUI/AddressBookUI.h>
@@ -15,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UITextView *messageTextLabel;
-@property (strong, nonatomic) ECPhoneNumberFormatter *formatter;
 
 @end
 
@@ -29,11 +29,6 @@
     self.pickedDate.minimumDate = [NSDate date];
     self.messageTextLabel.delegate = self;
     self.phoneNumberLabel.delegate = self;
-}
-
--(void) setFormatter:(ECPhoneNumberFormatter *)formatter
-{
-    if (!formatter) _formatter = [[ECPhoneNumberFormatter alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -131,8 +126,18 @@
     }
 
     // If Sound+Alerts are available -> chedule notifications
-    if ((currentNotificationSettings.types & UIUserNotificationTypeSound) && (currentNotificationSettings.types & UIUserNotificationTypeAlert))[self scheduleLocalNotification:self.pickedDate.date];
-
+    if ((currentNotificationSettings.types & UIUserNotificationTypeSound) && (currentNotificationSettings.types & UIUserNotificationTypeAlert))
+        {
+            //Schedule notification
+            [self scheduleLocalNotification:self.pickedDate.date];
+            
+            //Add entry to NSUserDefaults
+            [AddData addDataUserDefaults:self.pickedDate.date phoneNumber:self.phoneNumberLabel.text textMessage:self.messageTextLabel.text];
+            
+            // Retreve data to check
+//            NSLog(@"Number of rows: %d", [AddData calculateNumberOfRows]);
+//            NSLog(@"Here is the array: %@", [AddData retreveDataUserDefaults]);
+        }
 }
 
 

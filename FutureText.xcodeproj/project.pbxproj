@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6982B2857820578F8E2E8A8E /* libPods-FutureText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */; };
 		70AA1CD61A52093C0071E278 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AA1CD51A52093C0071E278 /* MessageUI.framework */; };
+		70AA1CF11A5F2EC40071E278 /* testClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF01A5F2EC40071E278 /* testClass.m */; };
+		70AA1CF41A5F3A200071E278 /* AddData.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF31A5F3A200071E278 /* AddData.m */; };
+		70AA1CF71A5F47700071E278 /* ScheduledItemsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */; };
 		70E3BE251A51B43000BB37F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE241A51B43000BB37F2 /* main.m */; };
 		70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE271A51B43000BB37F2 /* AppDelegate.m */; };
 		70E3BE2B1A51B43000BB37F2 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */; };
@@ -32,6 +35,12 @@
 		485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FutureText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6810E9B63AF3424EB4C9E547 /* Pods-FutureText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FutureText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FutureText/Pods-FutureText.debug.xcconfig"; sourceTree = "<group>"; };
 		70AA1CD51A52093C0071E278 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		70AA1CEF1A5F2EC40071E278 /* testClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testClass.h; sourceTree = "<group>"; };
+		70AA1CF01A5F2EC40071E278 /* testClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testClass.m; sourceTree = "<group>"; };
+		70AA1CF21A5F3A200071E278 /* AddData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddData.h; sourceTree = "<group>"; };
+		70AA1CF31A5F3A200071E278 /* AddData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddData.m; sourceTree = "<group>"; };
+		70AA1CF51A5F47700071E278 /* ScheduledItemsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduledItemsTVC.h; sourceTree = "<group>"; };
+		70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledItemsTVC.m; sourceTree = "<group>"; };
 		70E3BE1F1A51B43000BB37F2 /* FutureText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE231A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE241A51B43000BB37F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,7 +102,11 @@
 			children = (
 				70E3BE291A51B43000BB37F2 /* ScheduleViewController.h */,
 				70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */,
+				70AA1CF21A5F3A200071E278 /* AddData.h */,
+				70AA1CF31A5F3A200071E278 /* AddData.m */,
 				70E3BE2C1A51B43000BB37F2 /* Main.storyboard */,
+				70AA1CF51A5F47700071E278 /* ScheduledItemsTVC.h */,
+				70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */,
 				70E3BE2F1A51B43000BB37F2 /* Images.xcassets */,
 				70E3BE311A51B43000BB37F2 /* LaunchScreen.xib */,
 				70E3BE221A51B43000BB37F2 /* Supporting Files */,
@@ -106,6 +119,8 @@
 			children = (
 				70E3BE261A51B43000BB37F2 /* AppDelegate.h */,
 				70E3BE271A51B43000BB37F2 /* AppDelegate.m */,
+				70AA1CEF1A5F2EC40071E278 /* testClass.h */,
+				70AA1CF01A5F2EC40071E278 /* testClass.m */,
 				70E3BE231A51B43000BB37F2 /* Info.plist */,
 				70E3BE241A51B43000BB37F2 /* main.m */,
 			);
@@ -282,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AA1CF11A5F2EC40071E278 /* testClass.m in Sources */,
 				70E3BE2B1A51B43000BB37F2 /* ScheduleViewController.m in Sources */,
+				70AA1CF71A5F47700071E278 /* ScheduledItemsTVC.m in Sources */,
 				70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */,
 				70E3BE251A51B43000BB37F2 /* main.m in Sources */,
+				70AA1CF41A5F3A200071E278 /* AddData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
