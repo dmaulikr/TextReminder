@@ -54,11 +54,28 @@
     [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
     [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
     
-    // Creating strings out of our NSUserDefaults data
-    NSString *title = [dateFormatter stringFromDate:[[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"date"]];
-    NSString *subTitle = [NSString stringWithFormat:@"To number: %@", [[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"number"]];
+
+    // Assigning and retreving dates
+    NSDate *currentDate = [NSDate date];
+    NSDate *objectDate = [[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"date"];
     
-    cell.textLabel.text = title;
+    // Checking the Due Date to displayed messages that are due in RED
+    // Creating strings out of our NSUserDefaults data
+    
+    if (objectDate > currentDate) {
+        // Display date in Red + add "DUE" at the end
+        NSString *title = [dateFormatter stringFromDate: objectDate];
+        cell.textLabel.textColor = [UIColor redColor];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ - Due", title];
+    }
+    else {
+        // Display date just in black
+        NSString *title = [dateFormatter stringFromDate: objectDate];
+        cell.textLabel.text = title;
+    }
+    
+   // Assign subtitle text
+    NSString *subTitle = [NSString stringWithFormat:@"To number: %@", [[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"number"]];
     cell.detailTextLabel.text = subTitle;
     
     return cell;
