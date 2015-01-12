@@ -60,16 +60,14 @@
 
     // remove object at [row]
     [array removeObjectAtIndex:row];
-    NSLog(@"Object has been removed from NSUserDefaults at the row: %d", row);
     
     // cancel notification
     for (UILocalNotification *notification in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
         
         // If the date matches to the date we need to delete, this notificaion is cancelled
-        if (notification.fireDate == dateToDelete)
+        if ([notification.fireDate compare:dateToDelete] == NSOrderedSame)
         {
             [[UIApplication sharedApplication] cancelLocalNotification:notification];
-            NSLog(@"Notification has been cancelled");
             
         }
     }

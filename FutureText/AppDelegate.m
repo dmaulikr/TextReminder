@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ScheduleViewController.h"
 
 @interface AppDelegate ()
 

@@ -10,6 +10,7 @@
 #import "AddData.h"
 #import <ECPhoneNumberFormatter.h>
 #import <AddressBookUI/AddressBookUI.h>
+#import "ScheduleViewController.h"
 
 @interface ScheduleViewController ()  < ABPeoplePickerNavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
@@ -134,7 +135,10 @@
             style:UIAlertActionStyleDefault
           handler:^(UIAlertAction * action) {}];
     [successfulSchedule addAction:dismissAction];
-    [self presentViewController:successfulSchedule animated:YES completion:nil];
+    
+    [self presentViewController:successfulSchedule animated:YES completion:^{
+        
+    }];
 }
 
 - (IBAction)pickContactButton:(UIButton *)sender
