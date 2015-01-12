@@ -68,6 +68,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)deleteButton:(UIButton *)sender {
+    [AddData deleteNotificationWithRowNumber:0];
+}
+
 /*
 #pragma mark - Navigation
 

@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface AddData : NSObject
 
 +(void) addDataUserDefaults: (NSDate *)date phoneNumber: (NSString *)number textMessage: (NSString *)textMessage;
 +(int) calculateNumberOfRows;
 +(NSMutableArray *) retreveDataUserDefaults;
++(void) deleteNotificationWithRowNumber: (int) row;
 
 @end

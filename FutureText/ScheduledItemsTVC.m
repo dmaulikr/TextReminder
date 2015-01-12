@@ -10,7 +10,9 @@
 #import "AddData.h"
 #import "DetailViewController.h"
 
-@interface ScheduledItemsTVC ()
+@interface ScheduledItemsTVC () <UITableViewDelegate>
+
+@property (strong, nonatomic) NSDate *currentDate;
 
 @end
 
@@ -24,6 +26,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +34,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -46,23 +53,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
+
     // Configure the cell...
     
     // Setting Date & Time format to display in the cell
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
     [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
-    
+    self.currentDate = [NSDate date];
+
 
     // Assigning and retreving dates
-    NSDate *currentDate = [NSDate date];
     NSDate *objectDate = [[[AddData retreveDataUserDefaults] objectAtIndex:indexPath.row] objectForKey:@"date"];
     
     // Checking the Due Date to displayed messages that are due in RED
     // Creating strings out of our NSUserDefaults data
     
-    if (objectDate > currentDate) {
+    if ([objectDate compare: self.currentDate]==NSOrderedAscending) {
         // Display date in Red + add "DUE" at the end
         NSString *title = [dateFormatter stringFromDate: objectDate];
         cell.textLabel.textColor = [UIColor redColor];
@@ -71,6 +78,7 @@
     else {
         // Display date just in black
         NSString *title = [dateFormatter stringFromDate: objectDate];
+        cell.textLabel.textColor = [UIColor blackColor];
         cell.textLabel.text = title;
     }
     
@@ -90,17 +98,21 @@
 }
 */
 
-/*
-// Override to support editing the table view.
+
+// Deleting rows
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [AddData deleteNotificationWithRowNumber:indexPath.row];
+
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
@@ -135,6 +147,5 @@
         [vc setIndexPath:path];
     }
 }
-
 
 @end

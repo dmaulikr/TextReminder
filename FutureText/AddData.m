@@ -13,18 +13,12 @@
 // Add data to NSUserDefaults
 +(void) addDataUserDefaults: (NSDate *)date phoneNumber: (NSString *)number textMessage: (NSString *)textMessage
 {
-    
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSMutableArray *array = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"array"]];
     
-    // retreve current data form defaults into an array
-    NSLog(@"Old array: %@", array);
-    // OK to this point
-    
     NSMutableDictionary *newDictionary = [[NSMutableDictionary alloc] initWithObjectsAndKeys:date, @"date", number, @"number", textMessage, @"message", nil];
     [array addObject:newDictionary];
-    NSLog(@"New array: %@", array);
     
     // Remove old object
     [defaults removeObjectForKey:@"array"];
@@ -57,4 +51,37 @@
     return array;
 }
 
+// Delete data from NSUserDefaults
++(void) deleteNotificationWithRowNumber: (int) row
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *array = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"array"]];
+    NSDate *dateToDelete = [[array objectAtIndex:row] objectForKey:@"date"];
+
+    // remove object at [row]
+    [array removeObjectAtIndex:row];
+    NSLog(@"Object has been removed from NSUserDefaults at the row: %d", row);
+    
+    // cancel notification
+    for (UILocalNotification *notification in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
+        
+        // If the date matches to the date we need to delete, this notificaion is cancelled
+        if (notification.fireDate == dateToDelete)
+        {
+            [[UIApplication sharedApplication] cancelLocalNotification:notification];
+            NSLog(@"Notification has been cancelled");
+            
+        }
+    }
+    
+    // Remove old object from NSUserDefaults
+    [defaults removeObjectForKey:@"array"];
+
+    // Add new updated object with new data
+    [defaults setObject:array forKey:@"array"];
+    
+    [defaults synchronize];
+    
+    // alterate through all scheduled notifications
+    }
 @end
