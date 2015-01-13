@@ -104,13 +104,8 @@
             
             //Add entry to NSUserDefaults
             [AddData addDataUserDefaults:self.pickedDate.date phoneNumber:self.phoneNumberLabel.text textMessage:self.messageTextLabel.text];
-            
-            // Retreve data to check
-//            NSLog(@"Number of rows: %d", [AddData calculateNumberOfRows]);
-//            NSLog(@"Here is the array: %@", [AddData retreveDataUserDefaults]);
         }
 }
-
 
 -(void) scheduleLocalNotification: (NSDate *)date
 {
@@ -133,12 +128,15 @@
     // Dismiss action
     UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
             style:UIAlertActionStyleDefault
-          handler:^(UIAlertAction * action) {}];
+          handler:^(UIAlertAction * action) {
+              
+              // Dismisses current ViewController and returns to UITableViewController
+              [self.navigationController popViewControllerAnimated:YES];
+          
+          }];
     [successfulSchedule addAction:dismissAction];
     
-    [self presentViewController:successfulSchedule animated:YES completion:^{
-        
-    }];
+    [self presentViewController:successfulSchedule animated:YES completion:^{}];
 }
 
 - (IBAction)pickContactButton:(UIButton *)sender
