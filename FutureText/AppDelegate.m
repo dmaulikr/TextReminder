@@ -54,13 +54,13 @@
     // I recieved a notification
     
     // Let's find in our database the appropriate entry to show when notification fires
-    
+    NSInteger row = [AddData findRowBasedOnDate:notification.fireDate];
     
     // Programmatically create our Storyboard & ViewControllers
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     DetailViewController *dvc = [sb instantiateViewControllerWithIdentifier:@"DetailViewController"];
     ScheduledItemsTVC *svc = [sb instantiateViewControllerWithIdentifier:@"ScheduledItemsTVC"];
-//    dvc.setIndexPath = @"Passing a value"; //Optional
+    [dvc setRowNumber:row];
     
     // Programmatically create UINavicationController, add it as a root ViewController and add created VC's to it
     UINavigationController *nav = (UINavigationController *) self.window.rootViewController;

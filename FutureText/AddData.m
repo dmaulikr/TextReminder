@@ -99,4 +99,21 @@
     // after we've found our row (objectIndex) let's delete our notification using this info
     [self deleteNotificationWithRowNumber:objectIndex];
 }
+
++(NSInteger) findRowBasedOnDate: (NSDate *)date
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *array = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"array"]];
+    
+    // Let's alterate through our NSUserDefaults
+    NSInteger objectIndex = 0;
+    for (NSDictionary *dictionary in array) {
+        
+        NSDate *tempDate = [dictionary objectForKey:@"date"];
+        if ([date compare:tempDate] == NSOrderedSame) break;
+        objectIndex ++;
+    }
+    
+    return objectIndex;
+}
 @end
