@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "DetailViewController.h"
+#import "ScheduledItemsTVC.h"
+#import "AddData.h"
 
 @interface AppDelegate ()
 
@@ -47,4 +50,24 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    // I recieved a notification
+    
+    // Let's find in our database the appropriate entry to show when notification fires
+    [AddData ]
+    
+    // Programmatically create our Storyboard & ViewControllers
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *dvc = [sb instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    ScheduledItemsTVC *svc = [sb instantiateViewControllerWithIdentifier:@"ScheduledItemsTVC"];
+//    dvc.setIndexPath = @"Passing a value"; //Optional
+    
+    // Programmatically create UINavicationController, add it as a root ViewController and add created VC's to it
+    UINavigationController *nav = (UINavigationController *) self.window.rootViewController;
+    nav.viewControllers = [NSArray arrayWithObjects:svc,dvc, nil];
+    
+    //Show DetailViewController
+    [(UINavigationController *)self.window.rootViewController popToViewController:dvc animated:TRUE];
+    
+}
 @end

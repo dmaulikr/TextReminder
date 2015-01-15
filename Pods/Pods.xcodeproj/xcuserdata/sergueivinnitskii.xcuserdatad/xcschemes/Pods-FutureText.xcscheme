@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5516735B5B384BA80023AAB"
+               BlueprintIdentifier = "284C919C34D5C5840D746095"
                BuildableName = "libPods-FutureText.a"
                BlueprintName = "Pods-FutureText"
                ReferencedContainer = "container:Pods.xcodeproj">
