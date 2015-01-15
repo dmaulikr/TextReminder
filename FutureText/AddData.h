@@ -15,5 +15,6 @@
 +(int) calculateNumberOfRows;
 +(NSMutableArray *) retreveDataUserDefaults;
 +(void) deleteNotificationWithRowNumber: (int) row;
++(void) deleteNotificationWithDate: (NSDate *) date;
 
 @end

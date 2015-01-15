@@ -54,7 +54,7 @@
     // I recieved a notification
     
     // Let's find in our database the appropriate entry to show when notification fires
-    [AddData ]
+    
     
     // Programmatically create our Storyboard & ViewControllers
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

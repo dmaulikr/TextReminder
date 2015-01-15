@@ -80,6 +80,23 @@
     
     [defaults synchronize];
     
-    // alterate through all scheduled notifications
+}
+
++(void) deleteNotificationWithDate: (NSDate *) date
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *array = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"array"]];
+    
+    // Let's alterate through our NSUserDefaults
+    int objectIndex = 0;
+    for (NSDictionary *dictionary in array) {
+        
+        NSDate *tempDate = [dictionary objectForKey:@"date"];
+        if ([date compare:tempDate] == NSOrderedSame) break;
+        objectIndex ++;
     }
+    
+    // after we've found our row (objectIndex) let's delete our notification using this info
+    [self deleteNotificationWithRowNumber:objectIndex];
+}
 @end

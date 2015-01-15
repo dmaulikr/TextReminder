@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UITextView *messageText;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) NSDate *date;
 
 @end
 
@@ -35,6 +36,7 @@
     self.phoneNumberLabel.text = [dictionary objectForKey:@"number"];
     self.messageText.text = [dictionary objectForKey:@"message"];
     self.dateLabel.text = [dateFormatter stringFromDate:[dictionary objectForKey:@"date"]];
+    self.date = [dictionary objectForKey:@"date"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,7 +71,11 @@
 }
 
 - (IBAction)deleteButton:(UIButton *)sender {
-    [AddData deleteNotificationWithRowNumber:0];
+    
+    [AddData deleteNotificationWithDate: self.date];
+    
+    // Dismisses current ViewController and returns to UITableViewController
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
