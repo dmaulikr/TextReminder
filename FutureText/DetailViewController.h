@@ -10,6 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) NSIndexPath *indexPath;
+@property (nonatomic) NSInteger rowNumber;
 
 @end

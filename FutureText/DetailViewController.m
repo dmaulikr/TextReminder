@@ -26,7 +26,7 @@
     
     // Retreve data from NSUserDefaults
     NSArray *array = [NSArray arrayWithArray:[AddData retreveDataUserDefaults]];
-    NSDictionary *dictionary = [array objectAtIndex:self.indexPath.row];
+    NSDictionary *dictionary = [array objectAtIndex:self.rowNumber];
     
     // Setting Date & Time format to display in the cell
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

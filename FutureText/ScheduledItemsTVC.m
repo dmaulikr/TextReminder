@@ -144,7 +144,7 @@
         // Pass any objects to the view controller here, like...
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
         // Passing NSIndexPath to DetailViewController
-        [vc setIndexPath:path];
+        [vc setRowNumber:path.row];
     }
 }
 
