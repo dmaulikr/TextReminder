@@ -102,7 +102,7 @@
 // Deleting rows
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [AddData deleteNotificationWithRowNumber:indexPath.row];
+    [AddData deleteNotificationWithRowNumber:(int)indexPath.row];
 
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source

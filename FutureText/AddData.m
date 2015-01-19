@@ -38,7 +38,7 @@
     
     array = [defaults objectForKey:@"array"];
     
-    return [array count];
+    return (int)[array count];
 }
 
 // Retreve data from NSUserDefaults
