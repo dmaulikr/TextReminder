@@ -78,6 +78,12 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    UIApplication *app = [UIApplication sharedApplication];
+    app.applicationIconBadgeNumber = 0;
+}
+
 /*
 #pragma mark - Navigation
 

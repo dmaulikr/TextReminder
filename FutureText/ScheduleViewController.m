@@ -117,6 +117,7 @@
     localNotification.alertBody = @"Scheduled Message Alert!";
     localNotification.alertAction = @"Slide to send message"; // doesn't do anything
     localNotification.soundName = UILocalNotificationDefaultSoundName;
+    localNotification.applicationIconBadgeNumber = 1;
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     

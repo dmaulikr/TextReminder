@@ -107,7 +107,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="text" translatesAutoresizingMaskIntoConstraints="NO" id="hkx-JC-6vH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkx-JC-6vH">
                                 <rect key="frame" x="262" y="139" width="187" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -185,7 +185,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello..." translatesAutoresizingMaskIntoConstraints="NO" id="Wqr-y6-BgH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqr-y6-BgH">
                                 <rect key="frame" x="262" y="145" width="177" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -203,10 +203,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2M-Um-AaT">
                                 <rect key="frame" x="218" y="534" width="164" height="34"/>
-                                <color key="backgroundColor" red="0.97647064924240112" green="0.035294119268655777" blue="0.19215688109397888" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="DELETE REMINDER">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.97647064924240112" green="0.035294119268655777" blue="0.15686275064945221" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -215,24 +214,23 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnB-Ue-ETm">
                                 <rect key="frame" x="172" y="474" width="257" height="42"/>
-                                <color key="backgroundColor" red="0.066666670143604279" green="0.84313732385635376" blue="0.10588236153125763" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="SEND MESSAGE NOW">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.066666670139999995" green="0.84313732389999996" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="sendMessageButton:" destination="aGg-UN-5FW" eventType="touchUpInside" id="Udv-6Y-mMD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan. 1 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAr-En-vAH">
-                                <rect key="frame" x="289" y="288" width="103" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan. 19, 2016, 08:55:56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAr-En-vAH">
+                                <rect key="frame" x="237" y="289" width="207" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind on:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-PV-xXb">
-                                <rect key="frame" x="166" y="292" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-PV-xXb">
+                                <rect key="frame" x="172" y="292" width="36" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -244,13 +242,13 @@
                             <constraint firstAttribute="centerX" secondItem="CnB-Ue-ETm" secondAttribute="centerX" id="4yl-Ml-4cV"/>
                             <constraint firstAttribute="centerX" secondItem="0hj-H2-1R9" secondAttribute="centerX" constant="84" id="7Dj-9U-gL7"/>
                             <constraint firstAttribute="centerX" secondItem="M2M-Um-AaT" secondAttribute="centerX" id="8uC-2k-5nA"/>
-                            <constraint firstAttribute="centerX" secondItem="jgy-PV-xXb" secondAttribute="centerX" constant="90" id="A4d-B0-P6a"/>
+                            <constraint firstAttribute="centerX" secondItem="jgy-PV-xXb" secondAttribute="centerX" constant="110" id="A4d-B0-P6a"/>
                             <constraint firstAttribute="centerX" secondItem="Qcv-bh-3CV" secondAttribute="centerX" constant="-40" id="Aa4-MQ-KSs"/>
                             <constraint firstItem="5ZU-W5-VSx" firstAttribute="top" secondItem="M2M-Um-AaT" secondAttribute="bottom" constant="32" id="HFZ-uj-9aI"/>
                             <constraint firstAttribute="centerX" secondItem="cAr-En-vAH" secondAttribute="centerX" constant="-40" id="JCC-wK-3MM"/>
                             <constraint firstItem="5ZU-W5-VSx" firstAttribute="top" secondItem="CnB-Ue-ETm" secondAttribute="bottom" constant="84" id="Jt2-hT-HD1"/>
                             <constraint firstItem="0hj-H2-1R9" firstAttribute="top" secondItem="cel-kV-qnz" secondAttribute="bottom" constant="89" id="KhT-KS-hyj"/>
-                            <constraint firstItem="cAr-En-vAH" firstAttribute="top" secondItem="cel-kV-qnz" secondAttribute="bottom" constant="224" id="ZxI-4E-qWD"/>
+                            <constraint firstItem="cAr-En-vAH" firstAttribute="top" secondItem="cel-kV-qnz" secondAttribute="bottom" constant="225" id="ZxI-4E-qWD"/>
                             <constraint firstAttribute="centerX" secondItem="fMv-8g-HbH" secondAttribute="centerX" constant="80" id="biu-hU-Sz3"/>
                             <constraint firstItem="jgy-PV-xXb" firstAttribute="top" secondItem="cel-kV-qnz" secondAttribute="bottom" constant="228" id="dbz-KT-I5Q"/>
                             <constraint firstItem="Wqr-y6-BgH" firstAttribute="top" secondItem="cel-kV-qnz" secondAttribute="bottom" constant="81" id="elv-eV-c0I"/>

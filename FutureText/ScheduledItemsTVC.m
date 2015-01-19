@@ -37,6 +37,8 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     [self.tableView reloadData];
+    UIApplication *app = [UIApplication sharedApplication];
+    app.applicationIconBadgeNumber = 0;
 }
 #pragma mark - Table view data source
 
