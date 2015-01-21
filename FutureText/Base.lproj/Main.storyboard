@@ -11,7 +11,11 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="WtE-l9-JM3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.53725492949999998" green="0.50588238240000005" blue="0.58431375029999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="separatorColor" red="0.26274511220000002" green="0.23921570180000001" blue="0.2823529541" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.95686280729999995" green="0.45882356169999999" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.95686280729999995" green="0.45882356169999999" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="IEQ-gC-09F" detailTextLabel="IXh-cL-vwf" rowHeight="63" style="IBUITableViewCellStyleSubtitle" id="HKX-tG-m37">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -20,18 +24,22 @@
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IEQ-gC-09F">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.53725492949999998" green="0.50588238240000005" blue="0.58431375029999999" alpha="1" colorSpace="deviceRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IXh-cL-vwf">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.53725492949999998" green="0.50588238240000005" blue="0.58431375029999999" alpha="1" colorSpace="deviceRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.53725492949999998" green="0.50588238240000005" blue="0.58431375029999999" alpha="1" colorSpace="deviceRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.53725492949999998" green="0.50588238240000005" blue="0.58431375029999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <segue destination="aGg-UN-5FW" kind="show" identifier="detailVewControllerSegue" id="LMr-LP-bdN"/>
                                 </connections>
@@ -129,7 +137,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.53725492949999998" green="0.50588238240000005" blue="0.58431375029999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="T3K-Vp-gPj" firstAttribute="top" secondItem="BY4-AN-eVp" secondAttribute="bottom" constant="19" id="1rr-Ng-HVS"/>
                             <constraint firstItem="20H-go-qRR" firstAttribute="top" secondItem="AiF-e7-0kO" secondAttribute="bottom" constant="8" id="6Az-8Y-uBV"/>
@@ -275,6 +283,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rpK-KK-X6r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20392158627510071" green="0.18823531270027161" blue="0.21960785984992981" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -286,4 +298,5 @@
             <point key="canvasLocation" x="153" y="360"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.95686280729999995" green="0.45882356169999999" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
 </document>
