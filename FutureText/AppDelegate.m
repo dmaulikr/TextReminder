@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "ScheduledItemsTVC.h"
 #import "AddData.h"
+#include <AudioToolbox/AudioToolbox.h>
 
 @interface AppDelegate ()
 
@@ -75,6 +76,13 @@
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     // I recieved a notification
+    
+    //Play a sound if notification is running on foreground
+    if (application.applicationState == UIApplicationStateActive)
+    {
+        AudioServicesPlaySystemSound (1007); // for some weird reason the first sound never plays: need 2 of them!
+        AudioServicesPlaySystemSound (1007);
+    }
     
     // Let's find in our database the appropriate entry to show when notification fires
     NSInteger row = [AddData findRowBasedOnDate:notification.fireDate];

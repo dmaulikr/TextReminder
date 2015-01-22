@@ -13,6 +13,7 @@
 		70AA1CF41A5F3A200071E278 /* AddData.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF31A5F3A200071E278 /* AddData.m */; };
 		70AA1CF71A5F47700071E278 /* ScheduledItemsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */; };
 		70AA1CFA1A606E3C0071E278 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA1CF91A606E3C0071E278 /* DetailViewController.m */; };
+		70AA1CFC1A7134780071E278 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AA1CFB1A7134780071E278 /* AudioToolbox.framework */; };
 		70E3BE251A51B43000BB37F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE241A51B43000BB37F2 /* main.m */; };
 		70E3BE281A51B43000BB37F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE271A51B43000BB37F2 /* AppDelegate.m */; };
 		70E3BE2B1A51B43000BB37F2 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E3BE2A1A51B43000BB37F2 /* ScheduleViewController.m */; };
@@ -44,6 +45,7 @@
 		70AA1CF61A5F47700071E278 /* ScheduledItemsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledItemsTVC.m; sourceTree = "<group>"; };
 		70AA1CF81A606E3C0071E278 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		70AA1CF91A606E3C0071E278 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		70AA1CFB1A7134780071E278 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		70E3BE1F1A51B43000BB37F2 /* FutureText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE231A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE241A51B43000BB37F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AA1CFC1A7134780071E278 /* AudioToolbox.framework in Frameworks */,
 				70AA1CD61A52093C0071E278 /* MessageUI.framework in Frameworks */,
 				6982B2857820578F8E2E8A8E /* libPods-FutureText.a in Frameworks */,
 			);
@@ -152,6 +155,7 @@
 		790E3B7DBB1D2F2E2C5E05F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70AA1CFB1A7134780071E278 /* AudioToolbox.framework */,
 				70AA1CD51A52093C0071E278 /* MessageUI.framework */,
 				485E82FAD1BC4AEEC1043586 /* libPods-FutureText.a */,
 			);

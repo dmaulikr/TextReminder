@@ -74,13 +74,13 @@
     if ([objectDate compare: self.currentDate]==NSOrderedAscending) {
         // Display date in Red + add "DUE" at the end
         NSString *title = [dateFormatter stringFromDate: objectDate];
-        cell.textLabel.textColor = [UIColor redColor];
+        cell.textLabel.textColor = [UIColor colorWithRed:244/255.0f green:117/255.0f blue:251/255.0f alpha:1.0f];
         cell.textLabel.text = [NSString stringWithFormat:@"%@ - Due", title];
     }
     else {
         // Display date just in black
         NSString *title = [dateFormatter stringFromDate: objectDate];
-        cell.textLabel.textColor = [UIColor blackColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.text = title;
     }
     
@@ -114,7 +114,6 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-
 
 /*
 // Override to support rearranging the table view.

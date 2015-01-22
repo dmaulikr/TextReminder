@@ -12,6 +12,7 @@
 #import <AddressBookUI/AddressBookUI.h>
 #import "ScheduleViewController.h"
 
+
 @interface ScheduleViewController ()  < ABPeoplePickerNavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickedDate;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberLabel;
@@ -115,7 +116,6 @@
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.repeatInterval = 0;
     localNotification.alertBody = @"Scheduled Message Alert!";
-    localNotification.alertAction = @"Slide to send message"; // doesn't do anything
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     localNotification.applicationIconBadgeNumber = 1;
     
@@ -197,5 +197,4 @@
 
     return YES;
 }
-
 @end
