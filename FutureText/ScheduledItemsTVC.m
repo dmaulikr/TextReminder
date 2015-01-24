@@ -13,6 +13,7 @@
 @interface ScheduledItemsTVC () <UITableViewDelegate>
 
 @property (strong, nonatomic) NSDate *currentDate;
+@property (strong, nonatomic) UIView *tutorialBackgoundView;
 
 @end
 
@@ -36,9 +37,42 @@
 
 - (void) viewDidAppear:(BOOL)animated
 {
+    // First Launch Tutorial Options
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLauch"]==NO) {
+        // On first launch, this block will execute
+        
+        // Create a semi-transparent dark background
+        self.tutorialBackgoundView = [[UIView alloc] init];
+        self.tutorialBackgoundView.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.7f];
+        [self.tutorialBackgoundView setFrame:self.view.frame];
+        
+        UIImage *tutorialImage = [UIImage imageNamed:@"tutorial_image"];
+        
+        UIImageView *overlayView = [[UIImageView alloc] initWithImage:tutorialImage];
+        
+        [overlayView setFrame:CGRectMake(0, 0, self.view.frame.size.width, tutorialImage.size.height)];
+        [self.tutorialBackgoundView addSubview:overlayView];
+        
+        [overlayView setContentMode:UIViewContentModeTopRight];
+        //        [overlayView setContentMode:UIViewContentModeScaleAspectFit];
+        
+        // Your scroll view or table view would be a subview of this view
+        [self.view addSubview:self.tutorialBackgoundView];
+        [self.view bringSubviewToFront:self.tutorialBackgoundView];
+        
+        // Set the "hasPerformedFirstLaunch" to NO so this block won't execute again
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasPerformedFirstLauch"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    else {
+        [self.tutorialBackgoundView removeFromSuperview];
+    }
+    
     [self.tableView reloadData];
     UIApplication *app = [UIApplication sharedApplication];
     app.applicationIconBadgeNumber = 0;
+    
+
 }
 #pragma mark - Table view data source
 

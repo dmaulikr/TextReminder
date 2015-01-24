@@ -48,7 +48,7 @@
         //Show DetailViewController
         [(UINavigationController *)self.window.rootViewController popToViewController:dvc animated:TRUE];
     }
-
+    
     return YES;
 }
 
