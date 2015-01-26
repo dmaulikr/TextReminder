@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E3BE1E1A51B43000BB37F2"
-               BuildableName = "FutureText.app"
-               BlueprintName = "FutureText"
-               ReferencedContainer = "container:FutureText.xcodeproj">
+               BuildableName = "TextReminder.app"
+               BlueprintName = "TextReminder"
+               ReferencedContainer = "container:TextReminder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E3BE371A51B43000BB37F2"
-               BuildableName = "FutureTextTests.xctest"
-               BlueprintName = "FutureTextTests"
-               ReferencedContainer = "container:FutureText.xcodeproj">
+               BuildableName = "TextReminderTests.xctest"
+               BlueprintName = "TextReminderTests"
+               ReferencedContainer = "container:TextReminder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E3BE371A51B43000BB37F2"
-               BuildableName = "FutureTextTests.xctest"
-               BlueprintName = "FutureTextTests"
-               ReferencedContainer = "container:FutureText.xcodeproj">
+               BuildableName = "TextReminderTests.xctest"
+               BlueprintName = "TextReminderTests"
+               ReferencedContainer = "container:TextReminder.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E3BE1E1A51B43000BB37F2"
-            BuildableName = "FutureText.app"
-            BlueprintName = "FutureText"
-            ReferencedContainer = "container:FutureText.xcodeproj">
+            BuildableName = "TextReminder.app"
+            BlueprintName = "TextReminder"
+            ReferencedContainer = "container:TextReminder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E3BE1E1A51B43000BB37F2"
-            BuildableName = "FutureText.app"
-            BlueprintName = "FutureText"
-            ReferencedContainer = "container:FutureText.xcodeproj">
+            BuildableName = "TextReminder.app"
+            BlueprintName = "TextReminder"
+            ReferencedContainer = "container:TextReminder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E3BE1E1A51B43000BB37F2"
-            BuildableName = "FutureText.app"
-            BlueprintName = "FutureText"
-            ReferencedContainer = "container:FutureText.xcodeproj">
+            BuildableName = "TextReminder.app"
+            BlueprintName = "TextReminder"
+            ReferencedContainer = "container:TextReminder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

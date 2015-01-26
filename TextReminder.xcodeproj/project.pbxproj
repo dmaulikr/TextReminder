@@ -43,7 +43,7 @@
 		70AA1CF81A606E3C0071E278 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		70AA1CF91A606E3C0071E278 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		70AA1CFB1A7134780071E278 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		70E3BE1F1A51B43000BB37F2 /* FutureText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E3BE1F1A51B43000BB37F2 /* TextReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE231A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE241A51B43000BB37F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70E3BE261A51B43000BB37F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		70E3BE2D1A51B43000BB37F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70E3BE2F1A51B43000BB37F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70E3BE321A51B43000BB37F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		70E3BE381A51B43000BB37F2 /* FutureTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E3BE381A51B43000BB37F2 /* TextReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3BE3D1A51B43000BB37F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3BE3E1A51B43000BB37F2 /* FutureTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FutureTextTests.m; sourceTree = "<group>"; };
 		C0BB06D7E6ABDB75C75902DC /* Pods-FutureText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FutureText.release.xcconfig"; path = "Pods/Target Support Files/Pods-FutureText/Pods-FutureText.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 		70E3BE201A51B43000BB37F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70E3BE1F1A51B43000BB37F2 /* FutureText.app */,
-				70E3BE381A51B43000BB37F2 /* FutureTextTests.xctest */,
+				70E3BE1F1A51B43000BB37F2 /* TextReminder.app */,
+				70E3BE381A51B43000BB37F2 /* TextReminderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70E3BE1E1A51B43000BB37F2 /* FutureText */ = {
+		70E3BE1E1A51B43000BB37F2 /* TextReminder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70E3BE421A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "FutureText" */;
+			buildConfigurationList = 70E3BE421A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "TextReminder" */;
 			buildPhases = (
 				62DD715893DD5AF5694339E7 /* Check Pods Manifest.lock */,
 				70E3BE1B1A51B43000BB37F2 /* Sources */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = FutureText;
+			name = TextReminder;
 			productName = FutureText;
-			productReference = 70E3BE1F1A51B43000BB37F2 /* FutureText.app */;
+			productReference = 70E3BE1F1A51B43000BB37F2 /* TextReminder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		70E3BE371A51B43000BB37F2 /* FutureTextTests */ = {
+		70E3BE371A51B43000BB37F2 /* TextReminderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70E3BE451A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "FutureTextTests" */;
+			buildConfigurationList = 70E3BE451A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "TextReminderTests" */;
 			buildPhases = (
 				70E3BE341A51B43000BB37F2 /* Sources */,
 				70E3BE351A51B43000BB37F2 /* Frameworks */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				70E3BE3A1A51B43000BB37F2 /* PBXTargetDependency */,
 			);
-			name = FutureTextTests;
+			name = TextReminderTests;
 			productName = FutureTextTests;
-			productReference = 70E3BE381A51B43000BB37F2 /* FutureTextTests.xctest */;
+			productReference = 70E3BE381A51B43000BB37F2 /* TextReminderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -217,6 +217,7 @@
 				TargetAttributes = {
 					70E3BE1E1A51B43000BB37F2 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 5W74E9U5N8;
 					};
 					70E3BE371A51B43000BB37F2 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -224,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 70E3BE1A1A51B43000BB37F2 /* Build configuration list for PBXProject "FutureText" */;
+			buildConfigurationList = 70E3BE1A1A51B43000BB37F2 /* Build configuration list for PBXProject "TextReminder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -237,8 +238,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70E3BE1E1A51B43000BB37F2 /* FutureText */,
-				70E3BE371A51B43000BB37F2 /* FutureTextTests */,
+				70E3BE1E1A51B43000BB37F2 /* TextReminder */,
+				70E3BE371A51B43000BB37F2 /* TextReminderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +324,7 @@
 /* Begin PBXTargetDependency section */
 		70E3BE3A1A51B43000BB37F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 70E3BE1E1A51B43000BB37F2 /* FutureText */;
+			target = 70E3BE1E1A51B43000BB37F2 /* TextReminder */;
 			targetProxy = 70E3BE391A51B43000BB37F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,9 +432,12 @@
 			baseConfigurationReference = 6810E9B63AF3424EB4C9E547 /* Pods-FutureText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FutureText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextReminder;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -442,9 +446,12 @@
 			baseConfigurationReference = C0BB06D7E6ABDB75C75902DC /* Pods-FutureText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FutureText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextReminder;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -462,7 +469,7 @@
 				);
 				INFOPLIST_FILE = FutureTextTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextReminderTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FutureText.app/FutureText";
 			};
 			name = Debug;
@@ -477,7 +484,7 @@
 				);
 				INFOPLIST_FILE = FutureTextTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextReminderTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FutureText.app/FutureText";
 			};
 			name = Release;
@@ -485,7 +492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70E3BE1A1A51B43000BB37F2 /* Build configuration list for PBXProject "FutureText" */ = {
+		70E3BE1A1A51B43000BB37F2 /* Build configuration list for PBXProject "TextReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E3BE401A51B43000BB37F2 /* Debug */,
@@ -494,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70E3BE421A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "FutureText" */ = {
+		70E3BE421A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "TextReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E3BE431A51B43000BB37F2 /* Debug */,
@@ -503,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70E3BE451A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "FutureTextTests" */ = {
+		70E3BE451A51B43000BB37F2 /* Build configuration list for PBXNativeTarget "TextReminderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E3BE461A51B43000BB37F2 /* Debug */,

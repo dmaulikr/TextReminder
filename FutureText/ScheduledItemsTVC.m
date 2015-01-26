@@ -125,6 +125,10 @@
     return cell;
 }
 
+// This method is here only because UI in iPad changes background color of the cell back to white
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor colorWithRed:118/255.0f green:109/255.0f blue:131/255.0f alpha:1.0f]];
+}
 
 /*
 // Override to support conditional editing of the table view.
