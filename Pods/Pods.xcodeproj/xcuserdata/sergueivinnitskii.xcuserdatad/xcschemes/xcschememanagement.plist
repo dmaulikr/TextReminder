@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-FutureText-ECPhoneNumberFormatter.xcscheme</key>
+		<key>Pods-TextReminder-ECPhoneNumberFormatter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FutureText.xcscheme</key>
+		<key>Pods-TextReminder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>ACDBE9A7AD0D5D0951BA0018</key>
+		<key>8BE33F03D0E351344A6FDE75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BFB210E33340EF7F36ED67C8</key>
+		<key>A78838BEE3F6AFA54C516AD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
