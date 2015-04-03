@@ -1,973 +1,431 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>044A473EA977660B83B1BE4B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>10F1FF8026495097CB01283C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0730EBB1502CAE623407145A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7C1B0677EBA8B550152E396C</string>
-				<string>AFB70DBBB69ACD7D52C23AA3</string>
-				<string>7FCFB02CB45459AFA019723D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ECPhoneNumberFormatter</string>
-			<key>path</key>
-			<string>ECPhoneNumberFormatter</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0782116596450D18709ECB83</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4740C57A62EBAC4FACEC379C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08EF89042D95A57A662307D1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-TextReminder-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>091D86B33B8ACF41C60BEC2A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8BCD9A55228FF2163D6F3F36</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0C23B11F10D5E4B64178C232</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-TextReminder-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10F1FF8026495097CB01283C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4740C57A62EBAC4FACEC379C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>11BD24045D2936872D626825</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C859E84E5CA123DAE4B2E213</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CC0D95237F1F39712EA0C79</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>51E9A24C0C7D94ADCE54A3AF</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A78838BEE3F6AFA54C516AD7</string>
-			<key>remoteInfo</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter</string>
-		</dict>
-		<key>1F4838CF2E94BC45CD8ACB88</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F03955C11A99287258832E64</string>
-				<string>8DE28E8B50D60A0808BE6769</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22F570188D9691521913DEAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4706512D298A847B6D6971B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>27FD5F461F4EFF6470DCF328</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9307D257C7338BB79D280560</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2B4F4719B3F3E2A8782B961D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TextReminder-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>334EBEDD442367F34643493C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DE7635B462503B58A0FBCBE2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-TextReminder-ECPhoneNumberFormatter/Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>44EB7E6A819EB5DC5648D434</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E672DBD89894C40C46C6D025</string>
-				<string>091D86B33B8ACF41C60BEC2A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>4706512D298A847B6D6971B6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TextReminder-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4740C57A62EBAC4FACEC379C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>51E9A24C0C7D94ADCE54A3AF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C5A39DFBCB117769D724FE80</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>53E3FCACDB66186A41E11D53</string>
-			<key>productRefGroup</key>
-			<string>1F4838CF2E94BC45CD8ACB88</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>8BE33F03D0E351344A6FDE75</string>
-				<string>A78838BEE3F6AFA54C516AD7</string>
-			</array>
-		</dict>
-		<key>53E3FCACDB66186A41E11D53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5D82EB98CF87108B474CA396</string>
-				<string>D611EFD1C6E411962186954D</string>
-				<string>A77FE1780BAF16EC798FEC24</string>
-				<string>1F4838CF2E94BC45CD8ACB88</string>
-				<string>11BD24045D2936872D626825</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5D82EB98CF87108B474CA396</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>69C7FC82C26F5869DDF8359C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69D82B10222ED1B50988CB3F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-TextReminder-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EB3BCF76C9E44EB1E0B067E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>7EC25E0ED6ED4CB248CCC397</string>
-				<string>D2918901A9261940E86860AC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7801968E82C17F3DE760FE0A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7C1B0677EBA8B550152E396C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ECPhoneNumberFormatter.h</string>
-			<key>path</key>
-			<string>ECPhoneNumberFormatter/ECPhoneNumberFormatter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7EC25E0ED6ED4CB248CCC397</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9F137EDF947A1D605D852752</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>7FCFB02CB45459AFA019723D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>69C7FC82C26F5869DDF8359C</string>
-				<string>DE7635B462503B58A0FBCBE2</string>
-				<string>8BCD9A55228FF2163D6F3F36</string>
-				<string>BDB692A8477FC78AEFE73DEF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-TextReminder-ECPhoneNumberFormatter</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8482260E8639C3F70E8265DA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>22F570188D9691521913DEAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8BCD9A55228FF2163D6F3F36</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8BE33F03D0E351344A6FDE75</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6EB3BCF76C9E44EB1E0B067E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8482260E8639C3F70E8265DA</string>
-				<string>044A473EA977660B83B1BE4B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>F82F1CF03E5CAA112BA96105</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TextReminder</string>
-			<key>productName</key>
-			<string>Pods-TextReminder</string>
-			<key>productReference</key>
-			<string>F03955C11A99287258832E64</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>8DE28E8B50D60A0808BE6769</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TextReminder-ECPhoneNumberFormatter.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9307D257C7338BB79D280560</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7C1B0677EBA8B550152E396C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>999C1F322A14B402F24018EC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DE7635B462503B58A0FBCBE2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-TextReminder-ECPhoneNumberFormatter/Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9F137EDF947A1D605D852752</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TextReminder.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A77FE1780BAF16EC798FEC24</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0730EBB1502CAE623407145A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A78838BEE3F6AFA54C516AD7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E2673FBAE9D86E8DB9C20EE5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>44EB7E6A819EB5DC5648D434</string>
-				<string>FCC7D042A54482A80CC796FF</string>
-				<string>27FD5F461F4EFF6470DCF328</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter</string>
-			<key>productName</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter</string>
-			<key>productReference</key>
-			<string>8DE28E8B50D60A0808BE6769</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>AFB70DBBB69ACD7D52C23AA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ECPhoneNumberFormatter.m</string>
-			<key>path</key>
-			<string>ECPhoneNumberFormatter/ECPhoneNumberFormatter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BDB692A8477FC78AEFE73DEF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0A3B6A336C374D1EA4DD3DC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4740C57A62EBAC4FACEC379C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5A39DFBCB117769D724FE80</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D3B21A696082A5E9496F2EA5</string>
-				<string>7801968E82C17F3DE760FE0A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C859E84E5CA123DAE4B2E213</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0C23B11F10D5E4B64178C232</string>
-				<string>69D82B10222ED1B50988CB3F</string>
-				<string>4706512D298A847B6D6971B6</string>
-				<string>08EF89042D95A57A662307D1</string>
-				<string>2B4F4719B3F3E2A8782B961D</string>
-				<string>9F137EDF947A1D605D852752</string>
-				<string>E6210A765DC2EAAA07EDB164</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-TextReminder</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-TextReminder</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2918901A9261940E86860AC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E6210A765DC2EAAA07EDB164</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D3B21A696082A5E9496F2EA5</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D611EFD1C6E411962186954D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0782116596450D18709ECB83</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE7635B462503B58A0FBCBE2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2673FBAE9D86E8DB9C20EE5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>334EBEDD442367F34643493C</string>
-				<string>999C1F322A14B402F24018EC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E6210A765DC2EAAA07EDB164</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TextReminder.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E672DBD89894C40C46C6D025</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFB70DBBB69ACD7D52C23AA3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fno-objc-arc</string>
-			</dict>
-		</dict>
-		<key>F03955C11A99287258832E64</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TextReminder.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F82F1CF03E5CAA112BA96105</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-TextReminder-ECPhoneNumberFormatter</string>
-			<key>target</key>
-			<string>A78838BEE3F6AFA54C516AD7</string>
-			<key>targetProxy</key>
-			<string>1CC0D95237F1F39712EA0C79</string>
-		</dict>
-		<key>FCC7D042A54482A80CC796FF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C0A3B6A336C374D1EA4DD3DC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>51E9A24C0C7D94ADCE54A3AF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89D8F76D0BC23D4676F84EB1 /* Pods-TextReminder-ECPhoneNumberFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD23F5544FA736F902DB24E /* Pods-TextReminder-ECPhoneNumberFormatter-dummy.m */; };
+		9882699822D9941259C7E766 /* ECPhoneNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E942269B95690642EB7D967C /* ECPhoneNumberFormatter.h */; };
+		9DDC5496D076BAD6E701C4BB /* ECPhoneNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748E641720FAE937511185A /* ECPhoneNumberFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B514D2E195FA3DDD4386D018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D73B2BC6F6F87A49986939 /* Foundation.framework */; };
+		CD94DD8661DD53D4936F722E /* Pods-TextReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE5E28242C1A54DD1C323 /* Pods-TextReminder-dummy.m */; };
+		EA95EB8EF0F2A237C149E496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D73B2BC6F6F87A49986939 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEED5A5FC26246F33BBB26F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88041755B76F1D3F1262A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE8972BCEF1AB885515440B;
+			remoteInfo = "Pods-TextReminder-ECPhoneNumberFormatter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1656786F9959A43C29631AFD /* Pods-TextReminder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextReminder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A22BA550C788468A690BAEC /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		385BE5E28242C1A54DD1C323 /* Pods-TextReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextReminder-dummy.m"; sourceTree = "<group>"; };
+		4CD23F5544FA736F902DB24E /* Pods-TextReminder-ECPhoneNumberFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextReminder-ECPhoneNumberFormatter-dummy.m"; sourceTree = "<group>"; };
+		4E33C2322C2EABC5B86FECB5 /* Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch"; sourceTree = "<group>"; };
+		5748E641720FAE937511185A /* ECPhoneNumberFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECPhoneNumberFormatter.m; path = ECPhoneNumberFormatter/ECPhoneNumberFormatter.m; sourceTree = "<group>"; };
+		5F25E23C0128C4776DA20946 /* Pods-TextReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextReminder.release.xcconfig"; sourceTree = "<group>"; };
+		709E8B0F5A554737F1982CF5 /* Pods-TextReminder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextReminder-acknowledgements.plist"; sourceTree = "<group>"; };
+		875BEE9F9899327CC07F0ADD /* Pods-TextReminder-ECPhoneNumberFormatter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextReminder-ECPhoneNumberFormatter-Private.xcconfig"; sourceTree = "<group>"; };
+		92A43C6C2A402811DC589B44 /* Pods-TextReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B7D23CDBFA59D2DF83606A /* libPods-TextReminder-ECPhoneNumberFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextReminder-ECPhoneNumberFormatter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94F620BD10473EF181BDF39 /* Pods-TextReminder-ECPhoneNumberFormatter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextReminder-ECPhoneNumberFormatter.xcconfig"; sourceTree = "<group>"; };
+		BE1DF532F8E7538D59ABD56E /* libPods-TextReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextReminder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09EB4BE0B6C5FA9D7E03038 /* Pods-TextReminder-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextReminder-environment.h"; sourceTree = "<group>"; };
+		E942269B95690642EB7D967C /* ECPhoneNumberFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECPhoneNumberFormatter.h; path = ECPhoneNumberFormatter/ECPhoneNumberFormatter.h; sourceTree = "<group>"; };
+		F7D73B2BC6F6F87A49986939 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F8D8DD19ABAEF790803F1168 /* Pods-TextReminder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextReminder-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB0FB0F44437A63B17C69C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514D2E195FA3DDD4386D018 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C68A8D9E7C68774B4F872175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA95EB8EF0F2A237C149E496 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1015A5FB6CC8E00869859D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153B965225D25996779618A5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		153B965225D25996779618A5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F7D73B2BC6F6F87A49986939 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2A9876F723C34723ED607366 /* ECPhoneNumberFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				E942269B95690642EB7D967C /* ECPhoneNumberFormatter.h */,
+				5748E641720FAE937511185A /* ECPhoneNumberFormatter.m */,
+				D2661C53AF0D737B2F915EA5 /* Support Files */,
+			);
+			path = ECPhoneNumberFormatter;
+			sourceTree = "<group>";
+		};
+		38148721C8AA6B782AFC39EB = {
+			isa = PBXGroup;
+			children = (
+				2A22BA550C788468A690BAEC /* Podfile */,
+				1015A5FB6CC8E00869859D76 /* Frameworks */,
+				B4F62A0B64D42D3A32891EFD /* Pods */,
+				735E44E6B84CB2DA0CA0BA00 /* Products */,
+				D06591DEFE0C2E1953B0471A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		735E44E6B84CB2DA0CA0BA00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DF532F8E7538D59ABD56E /* libPods-TextReminder.a */,
+				A0B7D23CDBFA59D2DF83606A /* libPods-TextReminder-ECPhoneNumberFormatter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4F62A0B64D42D3A32891EFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A9876F723C34723ED607366 /* ECPhoneNumberFormatter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D06591DEFE0C2E1953B0471A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCEBD558BD7536DFD295A28E /* Pods-TextReminder */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D2661C53AF0D737B2F915EA5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94F620BD10473EF181BDF39 /* Pods-TextReminder-ECPhoneNumberFormatter.xcconfig */,
+				875BEE9F9899327CC07F0ADD /* Pods-TextReminder-ECPhoneNumberFormatter-Private.xcconfig */,
+				4CD23F5544FA736F902DB24E /* Pods-TextReminder-ECPhoneNumberFormatter-dummy.m */,
+				4E33C2322C2EABC5B86FECB5 /* Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TextReminder-ECPhoneNumberFormatter";
+			sourceTree = "<group>";
+		};
+		FCEBD558BD7536DFD295A28E /* Pods-TextReminder */ = {
+			isa = PBXGroup;
+			children = (
+				1656786F9959A43C29631AFD /* Pods-TextReminder-acknowledgements.markdown */,
+				709E8B0F5A554737F1982CF5 /* Pods-TextReminder-acknowledgements.plist */,
+				385BE5E28242C1A54DD1C323 /* Pods-TextReminder-dummy.m */,
+				E09EB4BE0B6C5FA9D7E03038 /* Pods-TextReminder-environment.h */,
+				F8D8DD19ABAEF790803F1168 /* Pods-TextReminder-resources.sh */,
+				92A43C6C2A402811DC589B44 /* Pods-TextReminder.debug.xcconfig */,
+				5F25E23C0128C4776DA20946 /* Pods-TextReminder.release.xcconfig */,
+			);
+			name = "Pods-TextReminder";
+			path = "Target Support Files/Pods-TextReminder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		120EF3C62CCC11050F26FECC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9882699822D9941259C7E766 /* ECPhoneNumberFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8CE8972BCEF1AB885515440B /* Pods-TextReminder-ECPhoneNumberFormatter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F3536A5113BBFC61869E7C /* Build configuration list for PBXNativeTarget "Pods-TextReminder-ECPhoneNumberFormatter" */;
+			buildPhases = (
+				3378EF79321738C6D73978BF /* Sources */,
+				C68A8D9E7C68774B4F872175 /* Frameworks */,
+				120EF3C62CCC11050F26FECC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TextReminder-ECPhoneNumberFormatter";
+			productName = "Pods-TextReminder-ECPhoneNumberFormatter";
+			productReference = A0B7D23CDBFA59D2DF83606A /* libPods-TextReminder-ECPhoneNumberFormatter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D8D31EA3D70F3465F87495E5 /* Pods-TextReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE5BB77F8D3807069B285B5 /* Build configuration list for PBXNativeTarget "Pods-TextReminder" */;
+			buildPhases = (
+				272658F47923DC88763F22D4 /* Sources */,
+				6AB0FB0F44437A63B17C69C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC8C15264D9408690FD5D6A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-TextReminder";
+			productName = "Pods-TextReminder";
+			productReference = BE1DF532F8E7538D59ABD56E /* libPods-TextReminder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F88041755B76F1D3F1262A71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C5CAA8F6DF7006FDA34E16A8 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38148721C8AA6B782AFC39EB;
+			productRefGroup = 735E44E6B84CB2DA0CA0BA00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D31EA3D70F3465F87495E5 /* Pods-TextReminder */,
+				8CE8972BCEF1AB885515440B /* Pods-TextReminder-ECPhoneNumberFormatter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		272658F47923DC88763F22D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD94DD8661DD53D4936F722E /* Pods-TextReminder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3378EF79321738C6D73978BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDC5496D076BAD6E701C4BB /* ECPhoneNumberFormatter.m in Sources */,
+				89D8F76D0BC23D4676F84EB1 /* Pods-TextReminder-ECPhoneNumberFormatter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC8C15264D9408690FD5D6A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TextReminder-ECPhoneNumberFormatter";
+			target = 8CE8972BCEF1AB885515440B /* Pods-TextReminder-ECPhoneNumberFormatter */;
+			targetProxy = EEED5A5FC26246F33BBB26F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0761658290F93A92F7304557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875BEE9F9899327CC07F0ADD /* Pods-TextReminder-ECPhoneNumberFormatter-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TextReminder-ECPhoneNumberFormatter/Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DE24217A617D2438E78E1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875BEE9F9899327CC07F0ADD /* Pods-TextReminder-ECPhoneNumberFormatter-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TextReminder-ECPhoneNumberFormatter/Pods-TextReminder-ECPhoneNumberFormatter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3B07BA736F70DB7D7FAEB15A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F25E23C0128C4776DA20946 /* Pods-TextReminder.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5290BFC71A88F781F7320827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A43C6C2A402811DC589B44 /* Pods-TextReminder.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6BCC89D43B2539A320E86158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A5D0E092C20365D86B276934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F3536A5113BBFC61869E7C /* Build configuration list for PBXNativeTarget "Pods-TextReminder-ECPhoneNumberFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0761658290F93A92F7304557 /* Debug */,
+				1DE24217A617D2438E78E1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5CAA8F6DF7006FDA34E16A8 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCC89D43B2539A320E86158 /* Debug */,
+				A5D0E092C20365D86B276934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE5BB77F8D3807069B285B5 /* Build configuration list for PBXNativeTarget "Pods-TextReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5290BFC71A88F781F7320827 /* Debug */,
+				3B07BA736F70DB7D7FAEB15A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F88041755B76F1D3F1262A71 /* Project object */;
+}

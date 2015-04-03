@@ -5,6 +5,6 @@ DEPENDENCIES:
   - ECPhoneNumberFormatter (~> 0.1)
 
 SPEC CHECKSUMS:
-  ECPhoneNumberFormatter: 5e178027d1d43472187c3f623e7b69b89fdb3187
+  ECPhoneNumberFormatter: 061041e7715f8d3f2e8e2a069ddf28c52f7bd314
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.3
